@@ -1,10 +1,7 @@
-import * as dotenv from 'dotenv';
-dotenv.config({ path: './config/.env.test' });
-
 import {describe, expect, test} from '@jest/globals';
 import { DLAnalytics } from '../index';
-
 import fetch from 'node-fetch';
+
 
 jest.mock('node-fetch');
 const { Response } = jest.requireActual('node-fetch');
